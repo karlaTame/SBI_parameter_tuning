@@ -14,23 +14,6 @@ The goal is to obtain calibrated posterior distributions for model parameters gi
 
 ---
 
-## Methodology
-
-We use neural posterior estimation (NPE) to approximate the posterior distribution
-
-\[
-p(\theta \mid x)
-\]
-
-where:
-
-- \(\theta\) are neutrino interaction model parameters  
-- \(x\) represents simulated or observed histogrammed data  
-
-The model is trained on pairs \((\theta, x)\) generated from forward simulations. After training, the network provides amortized posterior inference for new observations.
-
----
-
 ## Features
 
 - Neural posterior estimation using `sbi`
@@ -41,8 +24,4 @@ The model is trained on pairs \((\theta, x)\) generated from forward simulations
   - Simulation-Based Calibration (SBC)
   - TARP diagnostic
 - Evaluation on MicroBooNE, T2K, and NuWro datasets
-
----
-
-## Repository Structure
 
